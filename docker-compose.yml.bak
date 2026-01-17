@@ -30,6 +30,7 @@ services:
       - ${HOME}/shared_data/locations:/app/OM1/locations:rw
     devices:
       - /dev/snd:/dev/snd
+      - /dev/video0:/dev/video0
     logging:
       driver: "json-file"
       options:
